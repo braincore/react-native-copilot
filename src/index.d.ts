@@ -68,7 +68,7 @@ declare module 'react-native-copilot' {
   export type CopilotStepProps = {
     name: string; // A unique name for the walkthrough step
     order: number; // A positive number indicating the order of the step in the entire walkthrough
-    text: string; // The text shown as the description for the step
+    text: string | ReactNode; // The text shown as the description for the step
     active?: boolean; // If set to false the step is ignored
   };
 
